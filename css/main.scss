@@ -57,7 +57,6 @@ body {
     padding-bottom: 80px;
     .wrapper {
         grid-template-columns: minmax(0, 340px) minmax(0, 340px) minmax(0, 340px);
-        // grid-template-columns: repeat(auto-fill, 340px);
         gap: 16px;
     }
 
@@ -139,6 +138,7 @@ body {
             .big_title {
                 color: #ffffff;
                 -webkit-text-stroke: 0 $light;
+                animation: slideInFromRight 10s ease-in;
             }
 
             .content {
@@ -157,5 +157,14 @@ body {
                 }
             }
         }
+    }
+}
+
+@keyframes slideInFromRight {
+    from {
+        transform: translateX(105px);
+    }
+    to {
+        transform: translateX(-1000%);
     }
 }

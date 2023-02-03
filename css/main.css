@@ -119,6 +119,8 @@ body {
 .services__card:hover .big_title {
   color: #ffffff;
   -webkit-text-stroke: 0 #f3f3f3;
+  -webkit-animation: slideInFromRight 10s ease-in;
+          animation: slideInFromRight 10s ease-in;
 }
 .services__card:hover .content {
   color: #ffffff;
@@ -129,4 +131,22 @@ body {
 }
 .services__card:hover .content .copy .icon img {
   filter: invert(100%);
+}
+
+@-webkit-keyframes slideInFromRight {
+  from {
+    transform: translateX(105px);
+  }
+  to {
+    transform: translateX(-1000%);
+  }
+}
+
+@keyframes slideInFromRight {
+  from {
+    transform: translateX(105px);
+  }
+  to {
+    transform: translateX(-1000%);
+  }
 }/*# sourceMappingURL=main.css.map */
