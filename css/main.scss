@@ -57,6 +57,7 @@ body {
     padding-bottom: 80px;
     .wrapper {
         grid-template-columns: minmax(0, 340px) minmax(0, 340px) minmax(0, 340px);
+        // grid-template-columns: repeat(auto-fill, 340px);
         gap: 16px;
     }
 
@@ -68,6 +69,14 @@ body {
         overflow: hidden;
         cursor: pointer;
         transition: 250ms;
+
+        &:nth-child(3n) {
+            top: 120px;
+        }
+
+        &:nth-child(3n-1) {
+            top: 60px;
+        }
 
         .big_title {
             font-family: $roboto;

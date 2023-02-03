@@ -60,6 +60,12 @@ body {
   cursor: pointer;
   transition: 250ms;
 }
+.services__card:nth-child(3n) {
+  top: 120px;
+}
+.services__card:nth-child(3n-1) {
+  top: 60px;
+}
 .services__card .big_title {
   font-family: "Roboto", sans-serif;
   font-size: 220px;
