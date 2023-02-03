@@ -1,6 +1,6 @@
 body {
   font-family: "Open Sans", sans-serif;
-  background-color: #fafafa;
+  background-color: #f3f3f3;
   color: #2b2b2b;
   font-size: 16px;
 }
@@ -40,7 +40,7 @@ body {
   width: 350px;
   font-size: 14px;
   font-weight: 500;
-  line-height: 1.3;
+  line-height: 1.4;
 }
 
 .services {
@@ -55,20 +55,37 @@ body {
   position: relative;
   width: 100%;
   height: 420px;
-  background-color: grey;
+  background-color: #ffffff;
   overflow: hidden;
+  cursor: pointer;
+  transition: 250ms;
 }
 .services__card .big_title {
   font-family: "Roboto", sans-serif;
   font-size: 220px;
   font-weight: 900;
-  transform: translateX(100px);
+  white-space: nowrap;
+  transform: translateX(105px);
+  color: transparent;
+  -webkit-text-stroke: 2px #f3f3f3;
 }
 .services__card .content {
   position: absolute;
   bottom: 0;
   padding: 0 30px 30px 30px;
   font-family: "Open Sans", sans-serif;
+}
+.services__card .content::before {
+  content: "";
+  position: absolute;
+  top: -40px;
+  left: 30px;
+  display: block;
+  width: 4px;
+  height: 4px;
+  background: transparent;
+  border: 2px solid #2b2b2b;
+  opacity: 0.8;
 }
 .services__card .content .small_title {
   font-size: 22px;
@@ -82,10 +99,28 @@ body {
        column-gap: 16px;
 }
 .services__card .content .copy p {
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 600;
   line-height: 1.5;
+  opacity: 0.6;
 }
-.services__card .content .copy ion-icon {
-  font-size: 40px;
+.services__card .content .copy .icon img {
+  width: 20px;
+}
+.services__card:hover {
+  background-color: #2b2b2b;
+}
+.services__card:hover .big_title {
+  color: #ffffff;
+  -webkit-text-stroke: 0 #f3f3f3;
+}
+.services__card:hover .content {
+  color: #ffffff;
+}
+.services__card:hover .content::before {
+  background: #ffffff;
+  border: 2px solid #ffffff;
+}
+.services__card:hover .content .copy .icon img {
+  filter: invert(100%);
 }/*# sourceMappingURL=main.css.map */
