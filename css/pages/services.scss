@@ -1,13 +1,10 @@
-$dark: #2b2b2b;
-$light: #f3f3f3;
-$open-sans: "Open Sans", sans-serif;
-$roboto: "Roboto", sans-serif;
+@import "../utils/base";
 
 body {
     font-family: $open-sans;
     background-color: $light;
     color: $dark;
-    font-size: clamp(10px, 16px, 18px);
+    font-size: 16px;
 }
 
 .wrapper {
@@ -138,7 +135,7 @@ body {
             .big_title {
                 color: #ffffff;
                 -webkit-text-stroke: 0 $light;
-                animation: slideInFromRight 10s ease-in;
+                animation: slideInFromRight 22s ease-in;
             }
 
             .content {

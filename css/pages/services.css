@@ -119,8 +119,8 @@ body {
 .services__card:hover .big_title {
   color: #ffffff;
   -webkit-text-stroke: 0 #f3f3f3;
-  -webkit-animation: slideInFromRight 10s ease-in;
-          animation: slideInFromRight 10s ease-in;
+  -webkit-animation: slideInFromRight 22s ease-in;
+          animation: slideInFromRight 22s ease-in;
 }
 .services__card:hover .content {
   color: #ffffff;
@@ -149,4 +149,4 @@ body {
   to {
     transform: translateX(-1000%);
   }
-}/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=services.css.map */
