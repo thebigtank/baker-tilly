@@ -3,6 +3,10 @@ body {
   font-size: 16px;
 }
 
+.btn {
+  cursor: pointer;
+}
+
 body {
   background-color: #f4f4f4;
   color: #000000;
