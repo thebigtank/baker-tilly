@@ -1,1 +1,64 @@
 @import "../utils/base";
+
+body {
+    background-color: $grey-03;
+    color: $light-00;
+}
+
+header {
+    display: flex;
+    .grp {
+        height: 120px;
+        background-color: $dark-00;
+        padding: 0 60px;
+        display: flex;
+        align-items: center;
+        gap: 30px;
+
+        .logo {
+            font-family: $maven;
+            font-size: 36px;
+            font-weight: 600;
+            text-decoration: none;
+            color: $light-00;
+        }
+
+        .hamburger {
+            width: 50px;
+            height: 50px;
+            background-color: transparent;
+            border: none;
+            filter: invert(100%);
+
+            .open {
+                display: block;
+            }
+
+            .close {
+                display: none;
+            }
+
+            &.is-active {
+                .open {
+                    display: none;
+                }
+
+                .close {
+                    display: block;
+                }
+            }
+        }
+    }
+
+    .search {
+        height: 120px;
+        width: 120px;
+        background-color: $grey-00;
+        border: none;
+
+        img {
+            width: 30px;
+            filter: invert(100%);
+        }
+    }
+}

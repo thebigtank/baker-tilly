@@ -1,4 +1,26 @@
-$dark: #2b2b2b;
-$light: #f3f3f3;
+$dark-00: #000000;
+$dark-01: #0f1113;
+
+
+$grey-00: #111113;
+$grey-01: #222224;
+$grey-02: #2c2c2c;
+$grey-03: #363636;
+
+
+$light-00: #ffffff;
+$light-01: #f4f4f4;
+$off-white: #ebebeb;
+
+
+$green: #d3fa2e;
+
+
 $open-sans: "Open Sans", sans-serif;
 $roboto: "Roboto", sans-serif;
+$maven: 'Maven Pro', sans-serif;
+
+body {
+    font-family: $open-sans;
+    font-size: 16px;
+}
